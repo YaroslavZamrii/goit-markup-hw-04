@@ -207,6 +207,36 @@ body {
 .about-item {
   flex-basis: calc((100% - 72px) / 4);
 }
+
+.about-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  border-radius: 4px;
+  background-size: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--light-background-color);
+  
+  margin-bottom: 8px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/icon-antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/icon-clock.svg);
+}
+
+.icon-diagrama::before {
+  background-image: url(../images/icon-diagrama.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/icon-astronaut.svg);
+}
+
 .about-item-title {
   margin-bottom: 8px;
 
